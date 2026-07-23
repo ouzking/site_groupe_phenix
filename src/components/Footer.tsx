@@ -16,7 +16,7 @@ import {
   FaXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
-import { Logo } from './ui/Logo';
+//import { Logo } from './ui/Logo';
 import { footerNav, companyInfo, partners } from '../data/content';
 import { useToast } from './ui/Toast';
 import phenixLogo from '../assets/images/phenix.jpeg';
