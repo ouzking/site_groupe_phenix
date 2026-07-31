@@ -13,7 +13,7 @@ export const companyInfo = {
   name: 'GROUPE PHÉNIX',
   legalName: 'GROUPE PHÉNIX SARL',
   tagline: 'Excellence · Innovation · Performance',
-  foundedYear: 2010,
+  foundedYear: 2020,
   address: 'Dakar, Keur Massar, Jaxaay, Parcelles Unité 10, Villa n°101',
   city: 'Dakar',
   country: 'Sénégal',
@@ -37,11 +37,11 @@ export const companyInfo = {
    ============================================================ */
 export type Stat = { value: number; suffix: string; label: string; sub?: string };
 export const keyStats: Stat[] = [
-  { value: 15, suffix: '+', label: "Années d'expérience", sub: 'Depuis 2010' },
-  { value: 320, suffix: '+', label: 'Projets réalisés', sub: 'Tous secteurs' },
-  { value: 180, suffix: '+', label: 'Entreprises accompagnées', sub: 'Banques, États, PME' },
+  { value: 6, suffix: '+', label: "Années d'expérience", sub: 'Depuis 2020' },
+  { value: 50, suffix: '+', label: 'Projets réalisés', sub: 'Tous secteurs' },
+  { value: 15, suffix: '+', label: 'Entreprises accompagnées', sub: 'Banques, États, PME' },
   { value: 98, suffix: '%', label: 'Clients satisfaits', sub: 'NPS > 70' },
-  { value: 45, suffix: '+', label: 'Partenaires internationaux', sub: 'Technologies & finance' },
+  { value: 10, suffix: '+', label: 'Partenaires internationaux', sub: 'Technologies & finance' },
   { value: 850, suffix: '+', label: 'Collaborateurs', sub: '8 pays' },
 ];
 
@@ -73,10 +73,10 @@ export const values = [
    TIMELINE
    ============================================================ */
 export const timeline = [
-  { year: '2010', title: 'Genèse à Dakar', description: "Création du GROUPE PHÉNIX par Maodo THIAM, avec une ambition : bâtir un champion sénégalais multisectoriel de référence." },
-  { year: '2013', title: 'Expansion digitale', description: "Lancement de PHÉNIX CONSULTING. Premiers grands contrats de transformation numérique avec les banques et administrations." },
-  { year: '2016', title: 'Ouverture internationale', description: "Création de PHÉNIX INTERNATIONAL. Premiers partenariats commerciaux avec l'Asie, l'Europe et le Moyen-Orient." },
-  { year: '2019', title: 'Bâtisseur d\'infrastructures', description: "Naissance de PHÉNIX CORPORATION. Premiers chantiers BTP et génie civil d'envergure à Dakar et en région." },
+  { year: '2020', title: 'Genèse à Dakar', description: "Création du GROUPE PHÉNIX par Maodo THIAM, avec une ambition : bâtir un champion sénégalais multisectoriel de référence." },
+  { year: '2021', title: 'Expansion digitale', description: "Lancement de PHÉNIX CONSULTING. Premiers grands contrats de transformation numérique avec les banques et administrations." },
+  { year: '2022', title: 'Ouverture internationale', description: "Création de PHÉNIX INTERNATIONAL. Premiers partenariats commerciaux avec l'Asie, l'Europe et le Moyen-Orient." },
+  { year: '2021', title: 'Bâtisseur d\'infrastructures', description: "Naissance de PHÉNIX CORPORATION. Premiers chantiers BTP et génie civil d'envergure à Dakar et en région." },
   { year: '2022', title: 'Cap IA & Cloud', description: "Investissement massif en Intelligence Artificielle, Cloud et cybersécurité. Lancement de Phenix Lab, notre cellule R&D." },
   { year: '2025', title: 'Leadership panafricain', description: "Plus de 850 collaborateurs, présence dans 8 pays, ambition confirmée de devenir leader régional multisectoriel." },
 ];
@@ -111,10 +111,10 @@ export const subsidiaries: Subsidiary[] = [
     color: '#7B5209',
     gradient: 'linear-gradient(135deg,#C9A02A,#7B5209)',
     icon: Cpu,
-    description: "Notre pôle d'expertise au service de la transformation digitale des entreprises et administrations. Du conseil stratégique au déploiement de solutions technologiques avancées, nous accompagnons nos clients vers l'excellence opérationnelle.",
+    description: "Notre pôle d'expertise au service de la transformation digitale des entreprises et administrations. Du conseil stratégique au déploiement de solutions technologiques avancées, nous accompagnons nos clients vers l'excellence opérationnelle. Nous accompagnons les écoles et les entités à obtenir une salle informatique",
     mission: "Accélérer la transformation numérique des organisations sénégalaises et africaines en leur apportant l'expertise, les technologies et l'accompagnement nécessaires pour rivaliser à l'échelle mondiale.",
     vision: "Être le partenaire technologique de référence en Afrique de l'Ouest, reconnu pour la qualité de nos livrables et notre capacité à innover.",
-    history: "Fondée en 2013, PHÉNIX CONSULTING est née de la conviction que les organisations africaines méritent un accompagnement technologique de niveau international. En une décennie, nous sommes passés de 5 à plus de 120 experts.",
+    history: "Fondée en 2021, PHÉNIX CONSULTING est née de la conviction que les organisations africaines méritent un accompagnement technologique de niveau international. En une décennie, nous sommes passés de 5 à plus de 120 experts.",
     domains: [
       { icon: Brain, label: 'Intelligence Artificielle', description: 'Modèles prédictifs, automatisation, IA générative, vision par ordinateur' },
       { icon: Code2, label: 'Développement Logiciel', description: 'ERP, CRM, applications Web & Mobiles sur mesure' },
@@ -126,8 +126,8 @@ export const subsidiaries: Subsidiary[] = [
       { icon: GraduationCap, label: 'Formation', description: 'Montée en compétence, certifications, académie interne' },
     ],
     stats: [
-      { value: 120, suffix: '+', label: 'Projets livrés', sub: 'Depuis 2013' },
-      { value: 45, suffix: '+', label: 'Clients accompagnés', sub: 'Banques & États' },
+      { value: 50, suffix: '+', label: 'Projets livrés', sub: 'Depuis 2013' },
+      { value: 120, suffix: '+', label: 'Clients accompagnés', sub: 'Banques & États' },
       { value: 30, suffix: '+', label: 'Experts technologiques', sub: 'Certifiés' },
       { value: 98, suffix: '%', label: 'Taux de satisfaction', sub: 'NPS > 70' },
     ],
@@ -150,7 +150,7 @@ export const subsidiaries: Subsidiary[] = [
     description: "Notre bras armé sur les marchés internationaux. Import-export, approvisionnement, transit, distribution et équipements. Nous connectons le Sénégal et l'Afrique de l'Ouest aux meilleures sources mondiales.",
     mission: "Fluidifier les échanges commerciaux entre le Sénégal et le monde, en garantissant à nos clients qualité, traçabilité et maîtrise des coûts sur l'ensemble de la chaîne logistique.",
     vision: "Devenir le partenaire incontournable du commerce international en Afrique de l'Ouest, du sourcing à la livraison finale.",
-    history: "Créée en 2016, PHÉNIX INTERNATIONAL a rapidement tissé un réseau de partenaires dans plus de 60 pays. Nous traitons aujourd'hui plus de 500 containers par an pour 150+ clients réguliers.",
+    history: "Créée en 2022, PHÉNIX INTERNATIONAL a rapidement tissé un réseau de partenaires dans plus de 60 pays. Nous traitons aujourd'hui plus de 500 containers par an pour 150+ clients réguliers.",
     domains: [
       { icon: Package, label: 'Commerce Général', description: "Approvisionnement, distribution, négoce de gros" },
       { icon: Globe2, label: 'Import / Export', description: 'Sourcing international, représentation commerciale' },
@@ -160,10 +160,10 @@ export const subsidiaries: Subsidiary[] = [
       { icon: Cpu, label: 'Matériel Informatique', description: 'Équipements IT, réseaux, licences, revente' },
     ],
     stats: [
-      { value: 60, suffix: '+', label: 'Pays partenaires', sub: 'Asie, Europe, USA' },
+      { value: 10, suffix: '+', label: 'Pays partenaires', sub: 'Asie, Europe, USA' },
       { value: 500, suffix: '+', label: 'Containers / an', sub: 'Transit maîtrisé' },
       { value: 150, suffix: '+', label: 'Clients réguliers', sub: 'Importateurs & PME' },
-      { value: 9, suffix: ' ans', label: "Expérience commerce", sub: 'Depuis 2016' },
+      { value: 6, suffix: ' ans', label: "Expérience commerce", sub: 'Depuis 2020' },
     ],
     process: [
       { title: 'Analyse des besoins', desc: 'Identification des produits, volumes, qualité cible et budget.' },
@@ -184,7 +184,7 @@ export const subsidiaries: Subsidiary[] = [
     description: "Notre division ingénierie et construction. Bâtiment, génie civil, routes, hydraulique, agriculture et énergie. Nous bâtissons les infrastructures qui structurent le développement économique.",
     mission: "Construire des infrastructures durables et de qualité, qui servent le développement économique et social du Sénégal et de l'Afrique de l'Ouest.",
     vision: "Être l'entreprise de BTP de référence au Sénégal, reconnue pour la qualité de ses ouvrages et son respect des délais.",
-    history: "Lancée en 2019, PHÉNIX CORPORATION a déjà réalisé plus de 85 chantiers : bâtiments, routes, réseaux. Nous comptons 350 ouvriers et ingénieurs mobilisables sur tout le territoire.",
+    history: "Lancée en 2021, PHÉNIX CORPORATION a déjà réalisé plus de 85 chantiers : bâtiments, routes, réseaux. Nous comptons 350 ouvriers et ingénieurs mobilisables sur tout le territoire.",
     domains: [
       { icon: Building2, label: 'Construction & BTP', description: 'Bâtiments, ouvrages d\'art, promotion immobilière' },
       { icon: HardHat, label: 'Génie Civil', description: 'Structures, fondations, terrassement, béton armé' },
@@ -194,7 +194,7 @@ export const subsidiaries: Subsidiary[] = [
       { icon: Wrench, label: 'Maintenance Industrielle', description: 'Entretien, remise en état, facility management' },
     ],
     stats: [
-      { value: 85, suffix: '+', label: "Chantiers réalisés", sub: 'Bâtiment & génie civil' },
+      { value: 50, suffix: '+', label: "Chantiers réalisés", sub: 'Bâtiment & génie civil' },
       { value: 200, suffix: 'k', label: 'm² construits', sub: 'Tous types' },
       { value: 350, suffix: '+', label: 'Ouvriers & ingénieurs', sub: 'Mobilisables' },
       { value: 100, suffix: '%', label: 'Délais respectés', sub: 'Engagement contractualisé' },
@@ -375,25 +375,25 @@ export type TeamMember = {
 
 export const teamMembers: TeamMember[] = [
   { id: 1, name: 'Maodo THIAM', role: 'Président Directeur Général', department: 'Direction Générale', subsidiary: 'Groupe', email: 'blscamaf@gmail.com', phone: '+221 78 452 19 12', linkedin: '#', bio: "Fondateur visionnaire du GROUPE PHÉNIX. Entrepreneur sénégalais reconnu, Maodo THIAM a bâti en 15 ans un groupe multisectoriel de référence, présent dans 8 pays avec plus de 850 collaborateurs.", skills: ['Stratégie', 'Leadership', 'Business Development', 'Gouvernance'], certifications: ['MBA', 'Harvard Business School Executive'], photo: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { id: 2, name: 'Aminata Diop', role: 'Directrice Technique', department: 'Technique & R&D', subsidiary: 'Phenix Consulting', email: 'a.diop@groupephenix.sn', phone: '+221 77 123 45 67', linkedin: '#', bio: "Experte en architecture logicielle et transformation cloud. 12 ans d'expérience dans les grands comptes bancaires et télécoms.", skills: ['Architecture', 'Cloud', 'DevOps', 'IA'], certifications: ['AWS Solutions Architect', 'TOGAF', 'PMP'], photo: 'https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { id: 3, name: 'Mamadou Sow', role: 'Directeur Commerciale', department: 'Commercial', subsidiary: 'Groupe', email: 'm.sow@groupephenix.sn', phone: '+221 76 234 56 78', linkedin: '#', bio: "15 ans de développement commercial en Afrique de l'Ouest. Spécialiste des marchés publics et des partenariats stratégiques.", skills: ['Business Development', 'Négociation', 'Partenariats', 'B2G'], certifications: ['MBA Commerce International', 'Salesforce Certified'], photo: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { id: 4, name: 'Fatou Ndiaye', role: 'Directrice Financière', department: 'Finance', subsidiary: 'Groupe', email: 'f.ndiaye@groupephenix.sn', phone: '+221 77 345 67 89', linkedin: '#', bio: "Expert-comptable et contrôleuse de gestion. Pilote la performance financière du Groupe avec rigueur et vision stratégique.", skills: ['Finance', 'Contrôle de gestion', 'Reporting', 'Trésorerie'], certifications: ['DEC', 'DSCG', 'ACCA'], photo: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { id: 5, name: 'Cheikh Fall', role: 'Directeur PHÉNIX CONSULTING', department: 'Direction Filiale', subsidiary: 'Phenix Consulting', email: 'c.fall@groupephenix.sn', phone: '+221 78 456 78 90', linkedin: '#', bio: "Ingénieur et manager. Pilote la filiale technologique avec une équipe de 30+ experts certifiés.", skills: ['Management', 'Conseil', 'Innovation', 'Delivery'], certifications: ['PMP', 'Scrum Master', 'ITIL'], photo: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { id: 6, name: 'Awa Sarr', role: 'Directrice PHÉNIX INTERNATIONAL', department: 'Direction Filiale', subsidiary: 'Phenix International', email: 'a.sarr@groupephenix.sn', phone: '+221 77 567 89 01', linkedin: '#', bio: "Spécialiste du commerce international et de la logistique. Réseau de partenaires dans 60+ pays.", skills: ['Import-Export', 'Transit', 'Logistique', 'Négociation'], certifications: ['Master Commerce International', 'FIDI'], photo: 'https://images.pexels.com/photos/5905902/pexels-photo-5905902.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { id: 7, name: 'Ousmane Ba', role: 'Directeur PHÉNIX CORPORATION', department: 'Direction Filiale', subsidiary: 'Phenix Corporation', email: 'o.ba@groupephenix.sn', phone: '+221 76 678 90 12', linkedin: '#', bio: "Ingénieur génie civil. 20 ans de chantiers. A dirigé plus de 85 ouvrages au Sénégal et en région.", skills: ['Génie Civil', 'BTP', 'Conduite de chantier', 'DAO'], certifications: ['Ingénieur ESTP', 'BIM Manager'], photo: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { id: 8, name: 'Khadija Mbaye', role: 'Directrice Ressources Humaines', department: 'Ressources Humaines', subsidiary: 'Groupe', email: 'k.mbaye@groupephenix.sn', phone: '+221 77 789 01 23', linkedin: '#', bio: "DRH engagée. Capital humain, formation continue et culture d'excellence au cœur de sa mission.", skills: ['RH', 'Recrutement', 'Formation', 'Gestion sociale'], certifications: ['Master RH', 'PSL Paris'], photo: 'https://images.pexels.com/photos/3730532/pexels-photo-3730532.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  { id: 2, name: 'Bassirou diallo', role: 'Directrice Technique', department: 'Technique & R&D', subsidiary: 'Phenix Consulting', email: 'a.diop@groupephenix.sn', phone: '+221 77 123 45 67', linkedin: '#', bio: "Experte en architecture logicielle et transformation cloud. 12 ans d'expérience dans les grands comptes bancaires et télécoms.", skills: ['Architecture', 'Cloud', 'DevOps', 'IA'], certifications: ['AWS Solutions Architect', 'TOGAF', 'PMP'], photo: 'https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  { id: 3, name: 'Moussa Dia', role: 'Directeur Commerciale', department: 'Commercial', subsidiary: 'Groupe', email: 'm.sow@groupephenix.sn', phone: '+221 76 234 56 78', linkedin: '#', bio: "15 ans de développement commercial en Afrique de l'Ouest. Spécialiste des marchés publics et des partenariats stratégiques.", skills: ['Business Development', 'Négociation', 'Partenariats', 'B2G'], certifications: ['MBA Commerce International', 'Salesforce Certified'], photo: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  { id: 4, name: 'Sokhna Kandji', role: 'Directrice Financière', department: 'Finance', subsidiary: 'Groupe', email: 'f.ndiaye@groupephenix.sn', phone: '+221 77 345 67 89', linkedin: '#', bio: "Expert-comptable et contrôleuse de gestion. Pilote la performance financière du Groupe avec rigueur et vision stratégique.", skills: ['Finance', 'Contrôle de gestion', 'Reporting', 'Trésorerie'], certifications: ['DEC', 'DSCG', 'ACCA'], photo: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  { id: 5, name: 'Ousmane Bodian', role: 'Directeur PHÉNIX CONSULTING', department: 'Direction Filiale', subsidiary: 'Phenix Consulting', email: 'ousmanearfangkemobodian@gmail.com', phone: '+221 78 456 78 90', linkedin: '#', bio: "Ingénieur et manager. Pilote la filiale technologique avec une équipe de 30+ experts certifiés.", skills: ['Management', 'Conseil', 'Innovation', 'Delivery'], certifications: ['PMP', 'Scrum Master', 'ITIL'], photo: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  { id: 6, name: 'Bathie Dieng', role: 'Directrice PHÉNIX INTERNATIONAL', department: 'Direction Filiale', subsidiary: 'Phenix International', email: 'bathiedieng52@gmail.com', phone: '+221 77 567 89 01', linkedin: '#', bio: "Spécialiste du commerce international et de la logistique. Réseau de partenaires dans 60+ pays.", skills: ['Import-Export', 'Transit', 'Logistique', 'Négociation'], certifications: ['Master Commerce International', 'FIDI'], photo: 'https://images.pexels.com/photos/5905902/pexels-photo-5905902.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  { id: 7, name: 'Pape Abdoulaye Sall', role: 'Directeur PHÉNIX CORPORATION', department: 'Direction Filiale', subsidiary: 'Phenix Corporation', email: 'o.ba@groupephenix.sn', phone: '+221 76 678 90 12', linkedin: '#', bio: "Ingénieur génie civil. 20 ans de chantiers. A dirigé plus de 85 ouvrages au Sénégal et en région.", skills: ['Génie Civil', 'BTP', 'Conduite de chantier', 'DAO'], certifications: ['Ingénieur ESTP', 'BIM Manager'], photo: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  { id: 8, name: 'Marie Diaho', role: 'Directrice Ressources Humaines', department: 'Ressources Humaines', subsidiary: 'Groupe', email: 'k.mbaye@groupephenix.sn', phone: '+221 77 789 01 23', linkedin: '#', bio: "DRH engagée. Capital humain, formation continue et culture d'excellence au cœur de sa mission.", skills: ['RH', 'Recrutement', 'Formation', 'Gestion sociale'], certifications: ['Master RH', 'PSL Paris'], photo: 'https://images.pexels.com/photos/3730532/pexels-photo-3730532.jpeg?auto=compress&cs=tinysrgb&w=600' },
 ];
 
 /* ============================================================
    TESTIMONIALS
    ============================================================ */
 export const testimonials = [
-  { name: 'Aminata Diop', role: 'DSI, Banque Nationale', quote: "Le GROUPE PHÉNIX a transformé notre système d'information avec un professionnalisme rare. Un partenaire de confiance sur qui nous comptons au quotidien." },
-  { name: 'Mamadou Sow', role: 'Directeur Général, Ministère', quote: "Leur maîtrise du génie civil et leur respect des délais ont fait de notre chantier un modèle. Bravo à toute l'équipe PHÉNIX CORPORATION." },
-  { name: 'Fatou Ndiaye', role: 'CEO, Groupe Agroalimentaire', quote: "De l'import-export à la logistique, PHÉNIX INTERNATIONAL gère nos flux avec une efficacité impressionnante. Un partenaire indispensable." },
-  { name: 'Cheikh Fall', role: 'CIO, Opérateur Télécom', quote: "L'équipe IA de PHÉNIX CONSULTING a déployé des modèles prédictifs qui ont révolutionné notre pilotage. Des résultats concrets et mesurables." },
+  { name: 'Bassirou Diallo', role: 'SCI Safar, Banque Nationale', quote: "Le GROUPE PHÉNIX a transformé notre système d'information avec un professionnalisme rare. Un partenaire de confiance sur qui nous comptons au quotidien." },
+  { name: 'Aladji Faye', role: 'Directeur Général, Promobilière', quote: "Leur maîtrise du génie civil et leur respect des délais ont fait de notre chantier un modèle. Bravo à toute l'équipe PHÉNIX CORPORATION." },
+  { name: 'Dame Fall', role: 'Transneg Internationnal', quote: "De l'import-export à la logistique, PHÉNIX INTERNATIONAL gère nos flux avec une efficacité impressionnante. Un partenaire indispensable." },
+  { name: 'Ndaté Ndiaye', role: 'CIO, Opérateur Télécom', quote: "L'équipe IA de PHÉNIX CONSULTING a déployé des modèles prédictifs qui ont révolutionné notre pilotage. Des résultats concrets et mesurables." },
 ];
-
+ 
 /* ============================================================
    PARTNERS
    ============================================================ */

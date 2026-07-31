@@ -53,7 +53,7 @@ export function Footer() {
   </div>
 </Link>
             <p className="mt-6 text-sm leading-relaxed text-anthracite-400">
-              Groupe sénégalais multisectoriel fondé en 2020 par {companyInfo.pdg}. Conseil, transformation numérique, BTP, commerce international, énergie et sécurité électronique. Nous bâtissons l&apos;excellence depuis 15 ans.
+              Groupe sénégalais multisectoriel fondé en 2020 par {companyInfo.pdg}. Conseil, transformation numérique, BTP, commerce international, énergie et sécurité électronique. Nous bâtissons l&apos;excellence depuis 6 ans.
             </p>
 
             {/* Official info */}
@@ -86,7 +86,7 @@ export function Footer() {
           </div>
 
           <div className="lg:justify-self-end">
-            <p className="text-sm font-semibold uppercase tracking-premium text-white">Newsletter</p>
+            <p className="text-sm font-semibold uppercase tracking-premium text-white">Actualités</p>
             <p className="mt-2 max-w-sm text-sm text-anthracite-400">Recevez nos actualités, insights et innovations. Une fois par mois, jamais plus.</p>
             <form
               onSubmit={(e) => { e.preventDefault(); notify({ title: 'Inscription confirmée', description: 'Bienvenue dans la communauté PHÉNIX.' }); (e.currentTarget.querySelector('input') as HTMLInputElement).value = ''; }}

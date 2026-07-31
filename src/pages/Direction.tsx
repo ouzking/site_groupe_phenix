@@ -50,12 +50,12 @@ export function Direction() {
             />
             <Reveal delay={0.15}>
               <p className="mt-6 text-base leading-[1.8] text-anthracite-600 dark:text-anthracite-300">
-                Entrepreneur sénégalais visionnaire, Maodo THIAM fonde le GROUPE PHÉNIX en 2010 avec une conviction : l&apos;Afrique de l&apos;Ouest mérite des champions nationaux capables de rivaliser avec les meilleurs groupes internationaux.
+                Entrepreneur sénégalais visionnaire, Maodo THIAM fonde le GROUPE PHÉNIX en 2020 avec une conviction : l&apos;Afrique de l&apos;Ouest mérite des champions nationaux capables de rivaliser avec les meilleurs groupes internationaux.
               </p>
             </Reveal>
             <Reveal delay={0.25}>
               <p className="mt-4 text-base leading-[1.8] text-anthracite-600 dark:text-anthracite-300">
-                En 15 ans, il a bâti un groupe multisectoriel de référence, passant de 3 à plus de 850 collaborateurs, présent dans 8 pays, avec trois filiales complémentaires. Son ambition : faire du GROUPE PHÉNIX un acteur incontournable du développement économique africain.
+                En 6 ans, il a bâti un groupe multisectoriel de référence, passant de 3 à plus de 850 collaborateurs, présent dans 8 pays, avec trois filiales complémentaires. Son ambition : faire du GROUPE PHÉNIX un acteur incontournable du développement économique africain.
               </p>
             </Reveal>
 
@@ -116,9 +116,9 @@ export function Direction() {
           <SectionHeading eyebrow="Parcours" title={<>Une trajectoire de <span className="text-brand-gradient">bâtisseur</span></>} />
           <div className="mt-14 grid gap-6 md:grid-cols-4">
             {[
-              { year: '2005', title: 'Premières expériences', desc: "Formation en management et premières missions entrepreneuriales au Sénégal." },
-              { year: '2010', title: 'Fondation du Groupe', desc: "Création du GROUPE PHÉNIX à Dakar. Vision multisectorielle dès le départ." },
-              { year: '2016', title: 'Expansion internationale', desc: "Ouverture de PHÉNIX INTERNATIONAL. Réseau de partenaires dans 60+ pays." },
+              { year: '2015', title: 'Premières expériences', desc: "Formation en management et premières missions entrepreneuriales au Sénégal." },
+              { year: '2020', title: 'Fondation du Groupe', desc: "Création du GROUPE PHÉNIX à Dakar. Vision multisectorielle dès le départ." },
+              { year: '2022', title: 'Expansion internationale', desc: "Ouverture de PHÉNIX INTERNATIONAL. Réseau de partenaires dans 60+ pays." },
               { year: '2025', title: 'Leadership panafricain', desc: "850+ collaborateurs, 8 pays, 3 filiales. Ambition de leader régional confirmée." },
             ].map((s, i) => (
               <Reveal key={s.year} delay={i * 0.08}>

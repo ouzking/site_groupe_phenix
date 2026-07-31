@@ -96,7 +96,7 @@ export function Groupe() {
       {/* Timeline */}
       <section id="histoire" className="section-pad bg-anthracite-950">
         <div className="container-premium">
-          <SectionHeading light eyebrow="Trajectoire" title={<>15 ans de <span className="text-brand-gradient">croissance maîtrisée</span></>} description="Chaque étape a consolidé notre positionnement et élargi notre champ d&apos;action." />
+          <SectionHeading light eyebrow="Trajectoire" title={<>6 ans de <span className="text-brand-gradient">croissance maîtrisée</span></>} description="Chaque étape a consolidé notre positionnement et élargi notre champ d&apos;action." />
           <div className="relative mt-20">
             <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-gradient-to-b from-brand-500/0 via-brand-500/40 to-brand-500/0" />
             <div className="space-y-12">

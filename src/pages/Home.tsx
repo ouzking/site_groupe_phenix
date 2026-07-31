@@ -10,6 +10,7 @@ import { Counter } from '../components/ui/Counter';
 import { SectionHeading, CTABand } from '../components/ui/Section';
 import { subsidiaries, services, keyStats, testimonials, partners, whyChooseUs, companyInfo } from '../data/content';
 import phenixLogo from "../assets/images/phenix.jpeg";
+import pdgPhoto from '../assets/images/maodo.jpeg';
 
 export function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -216,7 +217,7 @@ export function Home() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-3xl blur-2xl" style={{ background: 'rgba(123,82,9,0.12)' }} />
               <img
-                src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://img.magnific.com/premium-photo/business-statistics-numbers-reports-cost-capital-sales-profit_511296-3137.jpg"
                 alt="Équipe GROUPE PHÉNIX"
                 loading="lazy"
                 className="relative aspect-[4/5] w-full rounded-3xl object-cover shadow-float"
@@ -226,7 +227,7 @@ export function Home() {
                   <Award className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <p className="font-display text-2xl font-bold text-anthracite-900 dark:text-white">15+</p>
+                  <p className="font-display text-2xl font-bold text-anthracite-900 dark:text-white">6+</p>
                   <p className="text-xs text-anthracite-500 dark:text-anthracite-300">ans d&apos;excellence</p>
                 </div>
               </div>
@@ -364,7 +365,7 @@ export function Home() {
           <Reveal delay={0.2} x={40}>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://media.licdn.com/dms/image/v2/D4D12AQGF5C733EW-Ug/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1707495148369?e=2147483647&v=beta&t=KX7sdIJH5zZNXArveEEuZ5K_usL94xd3DTPBuv6mp2I"
                 alt="Centre de données et innovation"
                 loading="lazy"
                 className="aspect-[4/3] w-full rounded-3xl object-cover shadow-float"
@@ -424,9 +425,15 @@ export function Home() {
             <Reveal>
               <Link to="/direction" className="group block h-full overflow-hidden rounded-3xl border bg-white p-8 card-hover dark:bg-anthracite-800/60" style={{ borderColor: 'rgba(14,13,12,0.07)' }}>
                 <div className="flex items-center gap-5">
-                  <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl shadow-brand">
-                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200" alt={companyInfo.pdg} className="h-full w-full object-cover" />
-                  </div>
+                  <div className="relative h-40 w-40 overflow-hidden rounded-3xl border border-brand-500/20 shadow-2xl">
+  <img
+    src={pdgPhoto}
+    alt={companyInfo.pdg}
+    className="h-full w-full object-cover transition-transform duration-700 hover:scale-110"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+</div>
                   <div>
                     <p className="text-xs font-bold uppercase tracking-premium" style={{ color: '#7B5209' }}>Président Directeur Général</p>
                     <p className="mt-1 font-display text-lg font-bold text-anthracite-900 dark:text-white">{companyInfo.pdg}</p>
