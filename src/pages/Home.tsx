@@ -8,7 +8,7 @@ import {
 import { Reveal, StaggerGroup, StaggerItem } from '../components/ui/Reveal';
 import { Counter } from '../components/ui/Counter';
 import { SectionHeading, CTABand } from '../components/ui/Section';
-import { subsidiaries, services, keyStats, testimonials, partners, whyChooseUs, companyInfo } from '../data/content';
+import { subsidiaries, services, keyStats, testimonials, partnerDetails, whyChooseUs, companyInfo } from '../data/content';
 import phenixLogo from "../assets/images/phenix.jpeg";
 import pdgPhoto from '../assets/images/maodo.jpeg';
 
@@ -185,7 +185,7 @@ export function Home() {
               align="left"
               eyebrow="Qui sommes-nous"
               title={<>Un groupe, <span className="text-brand-gradient">trois pôles</span>, une ambition panafricaine</>}
-              description="Fondé en 2010 par Maodo THIAM, le GROUPE PHÉNIX réunit sous une même bannière l&apos;expertise en conseil et technologies, la maîtrise des flux internationaux et l&apos;ingénierie de la construction. Une intégration unique au service du développement économique."
+              description="Fondé en 2020 par Maodo THIAM, le GROUPE PHÉNIX réunit sous une même bannière l&apos;expertise en conseil et technologies, la maîtrise des flux internationaux et l&apos;ingénierie de la construction. Une intégration unique au service du développement économique."
             />
             <Reveal delay={0.2}>
               <div className="mt-8 grid grid-cols-2 gap-4">
@@ -441,7 +441,7 @@ export function Home() {
                   </div>
                 </div>
                 <p className="mt-5 text-sm leading-relaxed text-anthracite-500 dark:text-anthracite-300">
-                  Entrepreneur sénégalais reconnu, Maodo THIAM a bâti en 15 ans un groupe multisectoriel de référence, présent dans 8 pays.
+                  Entrepreneur sénégalais reconnu, Maodo THIAM a bâti en 6 ans un groupe multisectoriel de référence, présent dans 8 pays.
                 </p>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold" style={{ color: '#7B5209' }}>
                   Découvrir la direction <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -483,7 +483,7 @@ export function Home() {
                       <p className="text-xs text-anthracite-300">Collaborateurs</p>
                     </div>
                     <div>
-                      <p className="font-display text-3xl font-bold text-brand-gradient"><Counter to={320} suffix="+" /></p>
+                      <p className="font-display text-3xl font-bold text-brand-gradient"><Counter to={50} suffix="+" /></p>
                       <p className="text-xs text-anthracite-300">Projets livrés</p>
                     </div>
                     <div>
@@ -491,7 +491,7 @@ export function Home() {
                       <p className="text-xs text-anthracite-300">Pays</p>
                     </div>
                     <div>
-                      <p className="font-display text-3xl font-bold text-brand-gradient"><Counter to={45} suffix="+" /></p>
+                      <p className="font-display text-3xl font-bold text-brand-gradient"><Counter to={10} suffix="+" /></p>
                       <p className="text-xs text-anthracite-300">Partenaires</p>
                     </div>
                   </div>
@@ -510,9 +510,14 @@ export function Home() {
           </Reveal>
           <div className="relative overflow-hidden mask-fade-r">
             <div className="flex animate-marquee gap-16 whitespace-nowrap">
-              {[...partners, ...partners].map((p, i) => (
-                <span key={i} className="font-display text-2xl font-bold text-anthracite-300 dark:text-anthracite-600">{p}</span>
-              ))}
+{[...partnerDetails, ...partnerDetails].map((partner, i) => (
+  <img
+    key={i}
+    src={partner.logo}
+    alt={partner.name}
+    className="h-12 w-auto object-contain"
+  />
+))}
             </div>
           </div>
         </div>

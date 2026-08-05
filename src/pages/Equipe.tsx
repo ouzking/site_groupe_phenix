@@ -30,7 +30,7 @@ export function Equipe() {
       <PageHero
         eyebrow="Notre équipe"
         badge="Talents & Expertise"
-        title={<>Les talents qui font <span className="text-brand-gradient">l&apos;excellence PHÉNIX</span></>}
+        title={<>Les talents qui font <span className="text-brand-gradient">l&apos;excellence de PHÉNIX</span></>}
         description="Ingénieurs, consultants, directeurs et techniciens : une équipe pluridisciplinaire, certifiée et engagée. Découvrez les femmes et les hommes qui portent notre ambition au quotidien."
       />
 

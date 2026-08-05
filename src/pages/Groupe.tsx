@@ -4,6 +4,13 @@ import { Counter } from '../components/ui/Counter';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Target, Eye, Compass } from 'lucide-react';
 import { values, timeline, orgChart, keyStats } from '../data/content';
+import groupe from "../assets/images/team/groupe2.png";
+import groupe2 from "../assets/images/team/groupe3.png";
+import groupe3 from "../assets/images/team/groupe4.png";
+import groupe4 from "../assets/images/team/groupe5.png";
+import groupe5 from "../assets/images/team/groupe7.png";
+
+
 
 export function Groupe() {
   return (
@@ -11,7 +18,7 @@ export function Groupe() {
       <PageHero
         eyebrow="Le Groupe"
         title={<>Une vision, <span className="text-brand-gradient">une trajectoire</span>, un ADN d&apos;excellence</>}
-        description="Depuis 2010, le GROUPE PHÉNIX écrit une histoire singulière : celle d&apos;un champion sénégalais devenu référence multisectorielle, porté par l&apos;audace et la rigueur."
+        description="Depuis 2020, le GROUPE PHÉNIX écrit une histoire singulière : celle d&apos;un champion sénégalais devenu référence multisectorielle, porté par l&apos;audace et la rigueur."
       />
 
       {/* Pitch */}
@@ -21,12 +28,12 @@ export function Groupe() {
             <SectionHeading align="left" eyebrow="Notre histoire" title={<>Né à Dakar, <span className="text-brand-gradient">conçu pour grandir</span></>} />
             <Reveal delay={0.15}>
               <p className="mt-6 text-base leading-relaxed text-anthracite-600 dark:text-anthracite-300">
-                Le GROUPE PHÉNIX a vu le jour en 2010, fondé par des entrepreneurs sénégalais animés par une conviction : l&apos;Afrique de l&apos;Ouest mérite des champions nationaux capables de rivaliser avec les meilleurs groupes internationaux.
+                Le GROUPE PHÉNIX a vu le jour en 2020, fondé par des entrepreneurs sénégalais animés par une conviction : l&apos;Afrique de l&apos;Ouest mérite des champions nationaux capables de rivaliser avec les meilleurs groupes internationaux.
               </p>
             </Reveal>
             <Reveal delay={0.25}>
               <p className="mt-4 text-base leading-relaxed text-anthracite-600 dark:text-anthracite-300">
-                De trois collaborateurs au départ, nous sommes aujourd&apos;hui plus de 850, répartis sur trois filiales complémentaires, présents dans 8 pays. Notre croissance s&apos;est toujours accompagnée d&apos;une exigence : la qualité sans compromis.
+                De trois collaborateurs au départ, nous sommes aujourd&apos;hui plus d'une centaine de collaborateurs, répartis sur trois filiales complémentaires, présents dans 8 pays. Notre croissance s&apos;est toujours accompagnée d&apos;une exigence : la qualité sans compromis.
               </p>
             </Reveal>
             <Reveal delay={0.35}>
@@ -41,10 +48,69 @@ export function Groupe() {
             </Reveal>
           </div>
           <Reveal delay={0.2} x={40}>
-            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Siège du Groupe PHÉNIX" loading="lazy" className="aspect-[4/5] w-full rounded-3xl object-cover shadow-float" />
+            <img src={groupe} />
           </Reveal>
         </div>
       </section>
+
+      {/* ===== GALERIE CORPORATE ===== */}
+
+<section className="section-pad bg-anthracite-50 dark:bg-anthracite-900/40">
+  <div className="container-premium">
+
+    <SectionHeading
+      eyebrow="Notre équipe"
+      title={
+        <>
+          Des femmes et des hommes au service de
+          <span className="text-brand-gradient"> l'excellence</span>
+        </>
+      }
+      description="Le GROUPE PHÉNIX s'appuie sur une équipe dynamique, multidisciplinaire et passionnée qui œuvre chaque jour pour offrir des solutions innovantes et créer de la valeur durable."
+    />
+
+    <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[groupe2, groupe3, groupe4, groupe5].map((image, index) => (
+
+        <Reveal key={index} delay={index * 0.1}>
+
+          <div className="group overflow-hidden rounded-3xl shadow-premium">
+
+            <div className="relative h-[340px] overflow-hidden">
+
+              <img
+                src={image}
+                alt={`Équipe Groupe PHÉNIX ${index + 1}`}
+                className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+
+                <h3 className="font-display text-xl font-bold text-white">
+                  GROUPE PHÉNIX
+                </h3>
+
+                <p className="mt-2 text-sm text-white/80">
+                  Excellence • Innovation • Leadership
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </Reveal>
+
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
       {/* Vision / Mission / Valeurs */}
       <section id="vision" className="section-pad bg-anthracite-50 dark:bg-anthracite-900/40">

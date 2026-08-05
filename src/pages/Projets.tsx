@@ -8,7 +8,7 @@ import { Reveal } from '../components/ui/Reveal';
 type Project = { title: string; category: string; status: 'Terminé' | 'En cours' | 'Planifié'; location: string; budget: string; duration: string; image: string };
 
 const projects: Project[] = [
-  { title: 'Digitalisation Banque Nationale', category: 'Conseil & Digital', status: 'Terminé', location: 'Dakar', budget: '2.5M €', duration: '14 mois', image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { title: 'Digitalisation Banque Nationale', category: 'Conseil & Digital', status: 'Terminé', location: 'Dakar', budget: '2.5M €', duration: '14 mois', image: 'https://img.magnific.com/photos-premium/collegues-affaires-travaillant-ensemble-equipe-ia-generative_874904-14773.jpg' },
   { title: 'Tour Almadies Business', category: 'BTP', status: 'En cours', location: 'Dakar', budget: '18M €', duration: '24 mois', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800' },
   { title: 'Système de Vidéosurveillance Urbaine', category: 'Sécurité', status: 'Terminé', location: 'Thiès', budget: '1.2M €', duration: '8 mois', image: 'https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=800' },
   { title: 'Plateforme IA Logistique', category: 'IA & Software', status: 'En cours', location: 'Abidjan', budget: '900k €', duration: '10 mois', image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800' },
@@ -34,7 +34,7 @@ export function Projets() {
       <PageHero
         eyebrow="Réalisations & Projets"
         title={<>Des projets qui <span className="text-brand-gradient">transforment</span> le territoire</>}
-        description="Plus de 320 projets livrés, du système d&apos;information bancaire à la centrale solaire. Découvrez nos chantiers en cours et à venir."
+        description="Plus de 50 projets livrés, du système d&apos;information bancaire à la centrale solaire. Découvrez nos chantiers en cours et à venir."
       />
 
       <section className="section-pad">

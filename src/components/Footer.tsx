@@ -17,7 +17,7 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 //import { Logo } from './ui/Logo';
-import { footerNav, companyInfo, partners } from '../data/content';
+import { footerNav, companyInfo, partnerDetails } from '../data/content';
 import { useToast } from './ui/Toast';
 import phenixLogo from '../assets/images/phenix.jpeg';
 
@@ -136,19 +136,88 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Partners marquee */}
-        <div className="border-b border-white/10 py-8">
-          <div className="mb-4 flex items-center justify-center gap-2 text-xs uppercase tracking-ultra text-anthracite-500">
-            <Award className="h-4 w-4" style={{ color: '#C9A02A' }} /> Partenaires & Technologies
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
-            {partners.map((p) => (
-              <span key={p} className="font-display text-lg font-semibold text-anthracite-500 transition-colors hover:text-brand-400">
-                {p}
-              </span>
-            ))}
-          </div>
+        {/* Partenaires */}
+<div className="border-b border-white/10 py-16">
+
+  {/* Titre */}
+  <div className="mb-12 text-center">
+    <div className="inline-flex items-center gap-3 rounded-full border border-brand-500/20 bg-brand-500/10 px-5 py-2">
+      <Award
+        className="h-5 w-5 text-brand-500"
+      />
+      <span className="text-xs font-bold uppercase tracking-[0.35em] text-brand-400">
+        Partenaires Stratégiques
+      </span>
+    </div>
+
+    <h2 className="mt-6 font-display text-3xl font-bold text-white">
+      Ils nous font confiance
+    </h2>
+
+    <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-anthracite-400">
+      Le GROUPE PHÉNIX collabore avec des institutions publiques,
+      des entreprises nationales et des partenaires internationaux
+      pour mener des projets d'envergure.
+    </p>
+  </div>
+
+  {/* Logos */}
+  <div className="grid grid-cols-2 gap-7 sm:grid-cols-3 lg:grid-cols-6">
+
+    {partnerDetails.map((partner) => (
+
+      <div
+        key={partner.name}
+        className="group relative overflow-hidden rounded-3xl border border-white/10
+                   bg-gradient-to-br from-white/10 via-white/5 to-transparent
+                   backdrop-blur-xl
+                   p-6
+                   transition-all duration-500
+                   hover:-translate-y-2
+                   hover:border-brand-500/50
+                   hover:shadow-[0_25px_60px_rgba(201,160,42,0.18)]"
+      >
+
+        {/* Halo doré */}
+        <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-brand-500/20 blur-3xl opacity-0 transition duration-700 group-hover:opacity-100" />
+
+        {/* Logo */}
+        <div className="flex h-24 items-center justify-center">
+
+          <img
+            src={partner.logo}
+            alt={partner.name}
+            className="max-h-20 w-auto object-contain
+                       grayscale
+                       opacity-80
+                       transition-all duration-500
+                       group-hover:grayscale-0
+                       group-hover:opacity-100
+                       group-hover:scale-110"
+          />
+
         </div>
+
+        {/* Nom */}
+        <div className="mt-5 border-t border-white/10 pt-4">
+
+          <h3 className="text-center text-sm font-semibold text-white">
+            {partner.name}
+          </h3>
+
+          <p className="mt-1 text-center text-xs text-anthracite-400">
+            {partner.sector}
+          </p>
+
+        </div>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</div>
 
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">

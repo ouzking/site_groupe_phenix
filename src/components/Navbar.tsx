@@ -161,11 +161,11 @@ export function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[110] bg-anthracite-950/95 backdrop-blur-xl lg:hidden"
-          >
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  exit={{ opacity: 0 }}
+  className="fixed inset-0 z-[110] overflow-y-auto bg-anthracite-950/95 backdrop-blur-xl lg:hidden"
+>
             <div className="flex items-center justify-between px-5 py-4">
               <Link to="/" className="flex items-center gap-4">
 
@@ -200,11 +200,17 @@ export function Navbar() {
               </button>
             </div>
             <motion.nav
-              initial="hidden"
-              animate="show"
-              variants={{ show: { transition: { staggerChildren: 0.05 } } }}
-              className="flex flex-col gap-1 px-5 pb-8 pt-2"
-            >
+  initial="hidden"
+  animate="show"
+  variants={{
+    show: {
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  }}
+  className="flex min-h-[calc(100vh-90px)] flex-col gap-1 px-5 pb-10 pt-2"
+>
               {navStructure.map((item) => (
                 <motion.div key={item.label} variants={{ hidden: { opacity: 0, x: -20 }, show: { opacity: 1, x: 0 } }}>
                   <Link to={item.to} className="block py-3 text-lg font-semibold text-white border-b border-white/10">

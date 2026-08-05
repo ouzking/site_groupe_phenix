@@ -35,7 +35,7 @@ export function Direction() {
                   <Award className="h-5 w-5" style={{ color: '#C9A02A' }} />
                   <div>
                     <p className="text-xs font-bold text-anthracite-900 dark:text-white">Fondateur</p>
-                    <p className="text-[10px] text-anthracite-400">Depuis 2010</p>
+                    <p className="text-[10px] text-anthracite-400">Depuis 2020</p>
                   </div>
                 </div>
               </div>

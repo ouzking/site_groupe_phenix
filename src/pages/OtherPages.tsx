@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Tag, HelpCircle, Download, FileText, Shield, Leaf, TrendingUp } from 'lucide-react';
 import { PageHero } from '../components/ui/Section';
 import { Reveal, StaggerGroup, StaggerItem } from '../components/ui/Reveal';
-import { partners, sectors } from '../data/content';
+import { partnerDetails, sectors } from '../data/content';
 
 /* ===== ACTUALITÉS ===== */
 const articles = [
@@ -65,13 +65,18 @@ export function Partenaires() {
       <section className="section-pad">
         <div className="container-premium">
           <StaggerGroup className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
-            {partners.map((p) => (
-              <StaggerItem key={p}>
-                <div className="group flex h-32 items-center justify-center rounded-2xl border border-black/5 bg-white transition-all hover:shadow-premium dark:border-white/10 dark:bg-anthracite-800/60">
-                  <span className="font-display text-xl font-bold text-anthracite-400 transition-colors group-hover:text-brand-gradient">{p}</span>
-                </div>
-              </StaggerItem>
-            ))}
+            {partnerDetails.map((partner) => (
+  <div
+    key={partner.name}
+    className="flex items-center justify-center"
+  >
+    <img
+      src={partner.logo}
+      alt={partner.name}
+      className="h-12 w-auto object-contain transition duration-300 hover:scale-110"
+    />
+  </div>
+))}
           </StaggerGroup>
         </div>
       </section>
